@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+
+             x:Class="CASkiwicoffinclub.AddAccount">
+
+    
+    <ContentPage.Content>
+        <Grid>
+            <Image x:Name="Background" Source="BackGround .jpg" Aspect="AspectFill"/>
+          <ScrollView>
+                <StackLayout>
+
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                                                     
+                        </Grid.RowDefinitions>
+
+                        <!--=========================================================================================-->
+                        <!--==========Logo==========-->
+
+                        <Image x:Name="BannerLogo" Source="KCC_Logo_banner2.jpeg" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="3" Aspect="AspectFill"/>
+                        <Image x:Name="Logo" Source="KCC_Logo_TRANS_ADMIN300.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"/>
+                        <Image x:Name="CASLabel" Source="CAS Label.png" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Scale="2"/>
+
+                        <!--=========================================================================================-->
+                        <!--==========Nav Bar Menu==========-->
+
+                        <Image x:Name="NavBackground" Source="Navbar.png"  Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="5"  Aspect="AspectFill" />
+                        <buttons:SfButton x:Name="HomeBtn" Text="Home" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold" TextColor="White" 
+                                       Grid.Column="0" Grid.Row="2" Clicked="HomeBtn_Clicked"/>
+                        <buttons:SfButton x:Name="AccountBtn" Text="Account" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold"  TextColor="White" 
+                                      Grid.Column="1" Grid.Row="2" Clicked="AccountBtn_Clicked" />
+                        <buttons:SfButton x:Name="CoffinBtn" Text="Coffin" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold"  TextColor="White" 
+                                       Grid.Column="2" Grid.Row="2" Clicked="CoffinBtn_Clicked"/>
+                        <buttons:SfButton x:Name="MembersBtn" Text="Members" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold"  TextColor="White" 
+                                       Grid.Column="3" Grid.Row="2" Clicked="MembersBtn_Clicked" />
+                        <buttons:SfButton x:Name="ReportsBtn" Text="Reports" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold"  TextColor="White" 
+                                       Grid.Column="4" Grid.Row="2" Clicked="ReportsBtn_Clicked" />
+
+                        <Image x:Name="PageTitleBackground" Source="Navbar.png"  Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="5"  Aspect="AspectFill" />
+                        <Label Text="ADD ACCOUNT" TextColor="Beige" Grid.Column="2" Grid.Row="4" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Large"/>
+
+
+                        <!--=========================================================================================-->
+                        <!--=========================DataForm======================-->
+                    </Grid>
+
+                    <Grid  >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Image x:Name="FormBackground1" Source="Form.JPG"  Grid.Column="2" Grid.Row="1"  Grid.ColumnSpan="2" Grid.RowSpan="7" Aspect="AspectFill" />
+                        <Image x:Name="NavBackground10" Source="Navbar.png"  Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="2"  Aspect="AspectFill" />
+                        <Label Text="Customer Details" TextColor="White" Grid.Column="2" Grid.Row="0"  Grid.ColumnSpan="2" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+                        <!--===============-->
+
+                        <Label x:Name="txtCustID" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="2" Grid.Row="1"/>
+                        <Label Text="First Name" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="2" Grid.Row="2"/>
+                        <Entry x:Name="txtFirstName" Grid.Column="3" Grid.Row="2"/>
+                        <Label Text="Last Name" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="2" Grid.Row="3"/>
+                        <Entry x:Name="txtLastName" Grid.Column="3" Grid.Row="3"/>
+                        <Label Text="Address" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="2" Grid.Row="4" />
+                        <Editor x:Name="txtAddress" Grid.Column="3" Grid.Row="4" Grid.RowSpan="2" AutoSize="TextChanges" />
+                        <Label Text="Contact No." TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="2" Grid.Row="6"/>
+                        <Entry x:Name="txtPhno" Grid.Column="3" Grid.Row="6"/>
+                        <Label Text="Email" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="2" Grid.Row="7"/>
+                        <Entry x:Name="txtEmail" Grid.Column="3" Grid.Row="7"/>
+
+
+
+                        <!--<dataForm:SfDataForm x:Name="dataformAccount"  DataObject="{Binding AddAccountInfo}" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="3" ColumnCount="2" 
+                     ContainerBackgroundColor="LightGray" BackgroundColor="Navy" LayoutOptions="Default"   />-->
+                        <!--===============-->
+                        <buttons:SfButton x:Name="AddCoffinBtn" Text="Add Coffin" Grid.Column="2" Grid.Row="8" Clicked="AddCoffinBtn_Clicked"
+                                      BackgroundColor="Black" CornerRadius="25"  FontSize="20"  
+                                      HasShadow="True" BorderWidth="1" BorderColor="Gray" ImageAlignment="End" TextColor="White"/>
+                        <!--===============-->
+
+                        <buttons:SfButton x:Name="CancelBtn" Text="Cancel" Grid.Column="3" Grid.Row="8" Clicked="CancelBtn_Clicked"
+                                      BackgroundColor="Black" CornerRadius="25"  FontSize="20"  
+                                      HasShadow="True" BorderWidth="1" BorderColor="Gray" ImageAlignment="End" TextColor="White"/>
+                        <!--=========================================================================================-->
+
+                    </Grid>
+
+
+
+
+
+
+
+
+                </StackLayout>
+
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

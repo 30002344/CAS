@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CASkiwicoffinclub"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="CASkiwicoffinclub.MainPage">
+
+    <ContentPage.Content>
+        <Grid>
+            <Image x:Name="Background" Source="BackGround .jpg" Aspect="AspectFill"/>
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+
+
+                    <Image x:Name="BannerLogo" Source="KCC_Logo_banner2.jpeg" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="2" Aspect="AspectFill"/>
+
+
+                    <Image x:Name="Logo" Source="KCC_Logo_TRANS_ADMIN300.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"/>
+                    <Image x:Name="CASLabel" Source="CAS Label.png" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Scale="2"/>
+
+
+                    <!--<Image x:Name="NavBackground" Source="Navbar.png"  Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="5"  Aspect="AspectFill" />-->
+                    
+                    <!--<Button x:Name="HomeBtn" Text="Home" Font="medium" TextColor="White" Grid.Column="0" Grid.Row="2" Clicked="HomeBtn_Clicked"/>
+                    <Button x:Name="AccountBtn" Text="Account" Font="medium" TextColor="White" Grid.Column="1" Grid.Row="2" Clicked="AccountBtn_Clicked" />
+                    <Button x:Name="CoffinBtn" Text="Coffin" Font="medium" TextColor="White" Grid.Column="2" Grid.Row="2" Clicked="CoffinBtn_Clicked"/>
+                    <Button x:Name="MembersBtn" Text="Members" Font="medium" TextColor="White" Grid.Column="3" Grid.Row="2" Clicked="MembersBtn_Clicked" />
+                    <Button x:Name="ReportsBtn" Text="Reports" Font="medium" TextColor="White" Grid.Column="4" Grid.Row="2" Clicked="ReportsBtn_Clicked"/>-->
+
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                   
+                       
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+
+
+
+                    </Grid.RowDefinitions>
+                    <buttons:SfButton x:Name="AccountBtn2" Text="Account" BackgroundColor="Black" CornerRadius="25" WidthRequest="450" HeightRequest="100" FontSize="50" 
+                                      HasShadow="True" BorderWidth="1" BorderColor="Gray" ImageAlignment="End" TextColor="White" Grid.Column="1" Grid.Row="0" 
+                                      Clicked="AccountBtn_Clicked" />
+                    <buttons:SfButton x:Name="CoffinBtn2" Text="Coffin"  BackgroundColor="Black" CornerRadius="25" WidthRequest="450" HeightRequest="100" FontSize="50" 
+                                      HasShadow="True" BorderWidth="1" BorderColor="Gray" ImageAlignment="End" TextColor="White" Grid.Column="1" Grid.Row="2" 
+                                      Clicked="CoffinBtn_Clicked"/>
+                    <buttons:SfButton x:Name="MembersBtn2" Text="Members"  BackgroundColor="Black" CornerRadius="25" WidthRequest="450" HeightRequest="100" FontSize="50" 
+                                      HasShadow="True" BorderWidth="1" BorderColor="Gray" ImageAlignment="End" TextColor="White" Grid.Column="1" Grid.Row="4" 
+                                      Clicked="MembersBtn_Clicked" />
+                    <buttons:SfButton x:Name="ReportsBtn2" Text="Reports" BackgroundColor="Black" CornerRadius="25" WidthRequest="450" HeightRequest="100" FontSize="50" 
+                                      HasShadow="True" BorderWidth="1" BorderColor="Gray" ImageAlignment="End" TextColor="White" Grid.Column="1" Grid.Row="6" 
+                                      Clicked="ReportsBtn_Clicked"/>
+                </Grid>
+
+
+
+
+            </StackLayout>
+        </Grid>
+
+
+
+
+    </ContentPage.Content>
+
+</ContentPage>

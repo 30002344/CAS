@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="CASkiwicoffinclub.View_Folder.AddCoffin">
+
+
+
+
+    <ContentPage.Content>
+        <Grid>
+            <Image x:Name="Background" Source="BackGround .jpg" Aspect="AspectFill"/>
+            <ScrollView>
+
+
+                <StackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+
+                        </Grid.RowDefinitions>
+
+                        <!--=========================================================================================-->
+                        <!--==========Logo==========-->
+
+                        <Image x:Name="BannerLogo" Source="KCC_Logo_banner2.jpeg" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="3" Aspect="AspectFill"/>
+                        <Image x:Name="Logo" Source="KCC_Logo_TRANS_ADMIN300.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"/>
+                        <Image x:Name="CASLabel" Source="CAS Label.png" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Scale="2"/>
+
+                        <!--=========================================================================================-->
+                        <!--==========Nav Bar Menu==========-->
+
+                        <Image x:Name="NavBackground" Source="Navbar.png"  Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="5"  Aspect="AspectFill" />
+                        <buttons:SfButton x:Name="HomeBtn" Text="Home" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold" TextColor="White" 
+                                       Grid.Column="0" Grid.Row="2" Clicked="HomeBtn_Clicked"/>
+                        <buttons:SfButton x:Name="AccountBtn" Text="Account" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold"  TextColor="White" 
+                                      Grid.Column="1" Grid.Row="2" Clicked="AccountBtn_Clicked" />
+                        <buttons:SfButton x:Name="CoffinBtn" Text="Coffin" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold"  TextColor="White" 
+                                       Grid.Column="2" Grid.Row="2" Clicked="CoffinBtn_Clicked"/>
+                        <buttons:SfButton x:Name="MembersBtn" Text="Members" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold"  TextColor="White" 
+                                       Grid.Column="3" Grid.Row="2" Clicked="MembersBtn_Clicked" />
+                        <buttons:SfButton x:Name="ReportsBtn" Text="Reports" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold"  TextColor="White" 
+                                       Grid.Column="4" Grid.Row="2" Clicked="ReportsBtn_Clicked" />
+
+                        <Image x:Name="PageTitleBackground" Source="Navbar.png"  Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="5"  Aspect="AspectFill" />
+                        <Label Text="ADD COFFIN" TextColor="Beige" Grid.Column="2" Grid.Row="4" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Large"/>
+
+                    </Grid>
+                    <!--=========================================================================================-->
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="200" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="50"/>
+
+
+                        </Grid.RowDefinitions>
+
+
+                        <!--=========================DataForm======================-->
+                        <!--<Label x:Name="Background1" Text="" Grid.Column="1" Grid.Row="0"  Grid.ColumnSpan="12" Grid.RowSpan="29" BackgroundColor="Navy"
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />-->
+
+                        <Image x:Name="FormBackground" Source="Form.JPG"  Grid.Column="1" Grid.Row="0"  Grid.ColumnSpan="12" Grid.RowSpan="28" Aspect="AspectFill" />
+
+                        <!--===============Coffin Details=================-->
+
+                        <Image x:Name="NavBackground1" Source="Navbar.png"  Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="12"  Aspect="AspectFill" />
+                        <Label Text="CoffinDetails" TextColor="White" Grid.Column="1" Grid.Row="0"  Grid.ColumnSpan="12" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+                        <Label Text="Customer ID" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="2" Grid.Row="1"/>
+                        <!--=============CustID Carried over from the Account==-->
+                        <Label x:Name="txtCustID"  TextColor="Black" BackgroundColor="LightGray" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                        <Label x:Name="txtCoffinID" Grid.Column="5" Grid.Row="1" Grid.ColumnSpan="2" />
+
+                        <!--===============-->
+                        
+                        <!--===============-->
+                        <Label Text="Coffin" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="7" Grid.Row="1"/>
+                        <CheckBox x:Name="txtCoffin" IsChecked="false" Grid.Column="8" Grid.Row="1"  CheckedChanged="TxtCoffin_CheckedChanged" Color="White"/>
+                        <Label Text="Casket" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="9" Grid.Row="1"/>
+                        <CheckBox x:Name="txtCasket" IsChecked="false" Grid.Column="10" Grid.Row="1" CheckedChanged="TxtCasket_CheckedChanged" Color="white"/>
+                        <Label Text="Tick Appropriate Box" HorizontalTextAlignment="End" TextColor="AntiqueWhite" Grid.Column="6" Grid.Row="2"/>
+
+                        <!--===============Measurement=================-->
+                        <Image x:Name="NavBackground2" Source="Navbar.png"  Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="12"  Aspect="AspectFill" />
+                        <Label Text="Measurement" TextColor="White" Grid.Column="1" Grid.Row="3"  Grid.ColumnSpan="12" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+
+                        <Label Text="Height" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="1" Grid.Row="4"/>
+                        <Label Text="1" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="2" Grid.Row="4"   />
+                        <CheckBox x:Name="txtHeight1" IsChecked="false" Grid.Column="3" Grid.Row="4"  CheckedChanged="TxtHeight1_CheckedChanged" Color="White"/>
+                        <Label Text="2" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="4" Grid.Row="4"   />
+                        <CheckBox x:Name="txtHeight2" IsChecked="false" Grid.Column="5" Grid.Row="4"  CheckedChanged="TxtHeight2_CheckedChanged" Color="White"/>
+                        <Label Text="3" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="6" Grid.Row="4"   />
+                        <CheckBox x:Name="txtHeight3" IsChecked="false" Grid.Column="7" Grid.Row="4"  CheckedChanged="TxtHeight3_CheckedChanged" Color="White"/>
+                        <Label Text="4" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="8" Grid.Row="4"   />
+                        <CheckBox x:Name="txtHeight4" IsChecked="false" Grid.Column="9" Grid.Row="4" CheckedChanged="TxtHeight4_CheckedChanged" Color="White"/>
+                        <Label Text="5" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="10" Grid.Row="4"   />
+                        <CheckBox x:Name="txtHeight5" IsChecked="false" Grid.Column="11" Grid.Row="4"  CheckedChanged="TxtHeight5_CheckedChanged" Color="White"/>
+                        <Label Text="Tick Appropriate Box" HorizontalTextAlignment="End" TextColor="AntiqueWhite" Grid.Column="3" Grid.Row="5"/>
+
+                        <Label Text="Custom Height" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="1" Grid.Row="5"/>
+                        <Entry x:Name="txtCustomheight" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" BackgroundColor="LightGray"/>
+                        <Label Text="Size" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="5" Grid.Row="5"/>
+                        <Entry x:Name="txtSize" Grid.Column="6" Grid.Row="5" Grid.ColumnSpan="2" BackgroundColor="LightGray"/>
+
+                        <!--===============Wood Type=================-->
+                        <Image x:Name="NavBackground3" Source="Navbar.png"  Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="12"  Aspect="AspectFill" />
+                        <Label Text="Wood Type" TextColor="White" Grid.Column="1" Grid.Row="6"  Grid.ColumnSpan="12" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+
+                        <Label Text="M D F" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="2" Grid.Row="7"   />
+                        <CheckBox x:Name="txtMdf" IsChecked="false" Grid.Column="3" Grid.Row="7"  CheckedChanged="TxtMdf_CheckedChanged" Color="White"/>
+                        <Label Text="Plywood" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="4" Grid.Row="7"   />
+                        <CheckBox x:Name="txtPlywood" IsChecked="false" Grid.Column="5" Grid.Row="7"  CheckedChanged="TxtPlywood_CheckedChanged" Color="White"/>
+                        <Label Text="P i n e" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="6" Grid.Row="7"   />
+                        <CheckBox x:Name="txtPine" IsChecked="false" Grid.Column="7" Grid.Row="7"  CheckedChanged="TxtPine_CheckedChanged" Color="White"/>
+
+                        <Label Text="Tick Appropriate Box" HorizontalTextAlignment="End" TextColor="AntiqueWhite" Grid.Column="3" Grid.Row="8"/>
+
+                        <!--===============Paint=================-->
+                        <Image x:Name="NavBackground4" Source="Navbar.png"  Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="12"  Aspect="AspectFill" />
+                        <Label Text="Paint" TextColor="White" Grid.Column="1" Grid.Row="9"  Grid.ColumnSpan="12" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+
+                        <Label Text="Undercoat" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="1" Grid.Row="10"/>
+                        <Entry x:Name="txtUndercoat" Grid.Column="2" Grid.Row="10" Grid.ColumnSpan="2" BackgroundColor="LightGray"/>
+                        <Label Text="Top Coat" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="4" Grid.Row="10"/>
+                        <Entry x:Name="txtTopcoat" Grid.Column="5" Grid.Row="10" Grid.ColumnSpan="2" BackgroundColor="LightGray"/>
+                        <Label Text="SprayPaint" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="7" Grid.Row="10"/>
+                        <Entry x:Name="txtSpraypaint" Grid.Column="8" Grid.Row="10" Grid.ColumnSpan="2" BackgroundColor="LightGray"/>
+                        <Label Text="Wood Stain" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="10" Grid.Row="10"/>
+                        <Entry x:Name="txtWoodstain" Grid.Column="11" Grid.Row="10" Grid.ColumnSpan="2" BackgroundColor="LightGray"/>
+
+                        <!--===============Lids=================-->
+                        <Image x:Name="NavBackground5" Source="Navbar.png"  Grid.Column="1" Grid.Row="11" Grid.ColumnSpan="12"  Aspect="AspectFill" />
+                        <Label Text="Lid / Screws" TextColor="White" Grid.Column="1" Grid.Row="11"  Grid.ColumnSpan="12" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+
+                        <Label Text=" Lid" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="1" Grid.Row="12"/>
+                        <Label Text="Single Raised Lid" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="2" Grid.Row="12"/>
+                        <CheckBox x:Name="txtSRLid" IsChecked="false" Grid.Column="3" Grid.Row="12"  CheckedChanged="TxtSRLid_CheckedChanged" Color="White"/>
+                        <Label Text="Double Raised Lid" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="4" Grid.Row="12"/>
+                        <CheckBox x:Name="txtDRLid" IsChecked="false" Grid.Column="5" Grid.Row="12"  CheckedChanged="TxtDRLid_CheckedChanged" Color="White"/>
+                        <Label Text=" Screws and Plates" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="7" Grid.Row="12"/>
+                        <Label Text="Silver" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="8" Grid.Row="12"/>
+                        <CheckBox x:Name="txtSScrews" IsChecked="false" Grid.Column="9" Grid.Row="12"  CheckedChanged="TxtSScrews_CheckedChanged" Color="White"/>
+                        <Label Text="Gold" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="10" Grid.Row="12"/>
+                        <CheckBox x:Name="txtGScrews" IsChecked="false" Grid.Column="11" Grid.Row="12"  CheckedChanged="TxtGScrews_CheckedChanged" Color="White"/>
+
+                        <!--===============Handles=================-->
+                        <Image x:Name="NavBackground6" Source="Navbar.png"  Grid.Column="1" Grid.Row="13" Grid.ColumnSpan="12"  Aspect="AspectFill" />
+                        <Label Text="Handles" TextColor="White" Grid.Column="1" Grid.Row="13"  Grid.ColumnSpan="12" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+                        <Label Text="Silver (Plastic)" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="1" Grid.Row="14"/>
+                        <CheckBox x:Name="txtSHandle" IsChecked="false" Grid.Column="2" Grid.Row="14"  CheckedChanged="TxtSHandle_CheckedChanged" Color="White"/>
+                        <Label Text="Gold (Plastic)" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="3" Grid.Row="14"/>
+                        <CheckBox x:Name="txtGHandle" IsChecked="false" Grid.Column="4" Grid.Row="14" CheckedChanged="TxtGHandle_CheckedChanged" Color="White"/>
+                        <Label Text="Wood" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="5" Grid.Row="14"/>
+                        <CheckBox x:Name="txtWHandle" IsChecked="false" Grid.Column="6" Grid.Row="14"  CheckedChanged="TxtWHandle_CheckedChanged" Color="White"/>
+                        <Label Text="Rope" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="7" Grid.Row="14"/>
+                        <CheckBox x:Name="txtRHandle" IsChecked="false" Grid.Column="8" Grid.Row="14" CheckedChanged="TxtRHandle_CheckedChanged" Color="White"/>
+
+                        <!--===============Linings=================-->
+                        <Image x:Name="NavBackground7" Source="Navbar.png"  Grid.Column="1" Grid.Row="15" Grid.ColumnSpan="12"  Aspect="AspectFill" />
+
+                        <Label Text="Linings" TextColor="White" Grid.Column="1" Grid.Row="15"  Grid.ColumnSpan="12" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+                        <Label Text="Lining 1" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="1" Grid.Row="16"/>
+                        <CheckBox x:Name="txtLining1" IsChecked="false" Grid.Column="2" Grid.Row="16"  CheckedChanged="TxtLining1_CheckedChanged" Color="White"/>
+                        <Label Text="Lining 2" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="3" Grid.Row="16"/>
+                        <CheckBox x:Name="txtLining2" IsChecked="false" Grid.Column="4" Grid.Row="16" CheckedChanged="TxtLining2_CheckedChanged" Color="White"/>
+                        <Label Text="Lining 3" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="5" Grid.Row="16"/>
+                        <CheckBox x:Name="txtLining3" IsChecked="false" Grid.Column="6" Grid.Row="16"  CheckedChanged="TxtLining3_CheckedChanged" Color="White"/>
+                        <Label Text="Lining 4" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="7" Grid.Row="16"/>
+                        <CheckBox x:Name="txtLining4" IsChecked="false" Grid.Column="8" Grid.Row="16"  CheckedChanged="TxtLining4_CheckedChanged" Color="White"/>
+                        <Label Text="Lining 5" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="9" Grid.Row="16"/>
+                        <CheckBox x:Name="txtLining5" IsChecked="false" Grid.Column="10" Grid.Row="16"  CheckedChanged="TxtLining5_CheckedChanged" Color="White"/>
+                        <Label Text="Lining 6" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="11" Grid.Row="16"/>
+                        <CheckBox x:Name="txtLining6" IsChecked="false" Grid.Column="12" Grid.Row="16"  CheckedChanged="TxtLining6_CheckedChanged" Color="White"/>
+                        <Label Text="Custom Lining" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="1" Grid.Row="17"/>
+                        <Entry x:Name="txtCustomLining" Grid.Column="2" Grid.Row="17" Grid.ColumnSpan="3" BackgroundColor="LightGray"/>
+
+                        <!--===============Extras=================-->
+                        <Image x:Name="NavBackground8" Source="Navbar.png"  Grid.Column="1" Grid.Row="18" Grid.ColumnSpan="12"  Aspect="AspectFill" />
+                        <Label Text="Extras" TextColor="White" Grid.Column="1" Grid.Row="18"  Grid.ColumnSpan="12" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+
+                        <Label Text="Extras" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="1" Grid.Row="19"/>
+                        <Editor x:Name="txtExtras" Grid.Column="2" Grid.Row="19" Grid.ColumnSpan="8" Grid.RowSpan="2" AutoSize="TextChanges" BackgroundColor="LightGray"/>
+
+                        <Label Text="Comments" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="1" Grid.Row="21"/>
+                        <Editor x:Name="txtComments" Grid.Column="2" Grid.Row="21" Grid.ColumnSpan="8" Grid.RowSpan="2" AutoSize="TextChanges" BackgroundColor="LightGray"/>
+
+                        <!--===============Storage / Delivery=================-->
+                        <Image x:Name="NavBackground9" Source="Navbar.png"  Grid.Column="1" Grid.Row="22" Grid.ColumnSpan="12"  Aspect="AspectFill" />
+                        <Label Text="Storage / Delivery" TextColor="White" Grid.Column="1" Grid.Row="22"  Grid.ColumnSpan="12" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+                        <Label Text="Stored on Premises" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="1" Grid.Row="23" Grid.ColumnSpan="2"/>
+                        <CheckBox x:Name="txtStored" IsChecked="false" Grid.Column="3" Grid.Row="23"  CheckedChanged="TxtStored_CheckedChanged" Color="White"/>
+
+                        <Label Text="Pick Up" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="4" Grid.Row="23" />
+                        <CheckBox x:Name="txtPickup" IsChecked="false" Grid.Column="5" Grid.Row="23"  CheckedChanged="TxtPickup_CheckedChanged" Color="White"/>
+                        <Label Text="Delivery - Rotorua" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="6" Grid.Row="23" Grid.ColumnSpan="2"/>
+                        <CheckBox x:Name="txtRotoruaDel" IsChecked="false" Grid.Column="8" Grid.Row="23"  CheckedChanged="TxtRotoruaDel_CheckedChanged" Color="White"/>
+                        
+                        <Label Text="Delivery -Nongotaha" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="1" Grid.Row="24" Grid.ColumnSpan="2"/>
+                        <CheckBox x:Name="txtNongotahaDel" IsChecked="false" Grid.Column="3" Grid.Row="24" CheckedChanged="TxtNongotahaDel_CheckedChanged" Color="White"/>
+
+                        <Label Text="Delivery -NZ" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="6" Grid.Row="24" Grid.ColumnSpan="2"/>
+                        <CheckBox x:Name="txtDeliveryNZ" IsChecked="false" Grid.Column="8" Grid.Row="24"  CheckedChanged="TxtDeliveryNZ_CheckedChanged" Color="White"/>
+
+                        <Label Text="Delivery Address" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="1" Grid.Row="25"/>
+                        <Editor x:Name="txtDelAddress" Grid.Column="2" Grid.Row="25" Grid.ColumnSpan="8" Grid.RowSpan="2" AutoSize="TextChanges" BackgroundColor="LightGray"/>
+
+                        <Label Text="Delivery Comments" TextColor="White" HorizontalTextAlignment="End" FontAttributes="Bold" Grid.Column="1" Grid.Row="26"/>
+                        <Editor x:Name="txtDeliveryComments" Grid.Column="2" Grid.Row="26" Grid.ColumnSpan="8" Grid.RowSpan="2" AutoSize="TextChanges" BackgroundColor="LightGray"/>
+
+
+
+
+
+
+                        <!--<dataForm:SfDataForm x:Name="dataformCoffin"  DataObject="{Binding AddCoffinInfo}" Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="3"                      
+                     ColumnCount="2" ContainerBackgroundColor="LightGray" BackgroundColor="Navy" LayoutOptions="Default"   />-->
+                        <!--===============-->
+
+                        <buttons:SfButton x:Name="SubmitBtn" Text="Submit" Grid.Column="8" Grid.Row="29" Clicked="SubmitBtn_Clicked"
+                                      BackgroundColor="Black" CornerRadius="25"  FontSize="20"  
+                                      HasShadow="True" BorderWidth="1" BorderColor="Gray" ImageAlignment="End" TextColor="White"/>
+
+                        <buttons:SfButton x:Name="CancelBtn" Text="Cancel" Grid.Column="10" Grid.Row="29" Clicked="CancelBtn_Clicked"
+                                      BackgroundColor="Black" CornerRadius="25"  FontSize="20"  
+                                      HasShadow="True" BorderWidth="1" BorderColor="Gray" ImageAlignment="End" TextColor="White"/>
+                        <!--=========================================================================================-->
+
+                    </Grid>
+
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

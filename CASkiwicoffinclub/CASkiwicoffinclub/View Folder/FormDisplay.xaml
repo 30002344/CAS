@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="CASkiwicoffinclub.View_Folder.FormDisplay">
+    <ContentPage.Content>
+        <Grid>
+            <Image x:Name="Background" Source="BackGround .jpg" Aspect="AspectFill"/>
+            <ScrollView>
+
+
+                <StackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+
+                        </Grid.RowDefinitions>
+
+                        <!--=========================================================================================-->
+                        <!--==========Logo==========-->
+
+                        <Image x:Name="BannerLogo" Source="KCC_Logo_banner2.jpeg" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Grid.RowSpan="3" Aspect="AspectFill"/>
+                        <Image x:Name="Logo" Source="KCC_Logo_TRANS_ADMIN300.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"/>
+                        <Image x:Name="CASLabel" Source="CAS Label.png" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Scale="2"/>
+
+                        <!--=========================================================================================-->
+                        <!--==========Nav Bar Menu==========-->
+
+                        <Image x:Name="NavBackground" Source="Navbar.png"  Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="5"  Aspect="AspectFill" />
+                        <buttons:SfButton x:Name="HomeBtn" Text="Home" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold" TextColor="White" 
+                                       Grid.Column="0" Grid.Row="2" Clicked="HomeBtn_Clicked"/>
+                        <buttons:SfButton x:Name="AccountBtn" Text="Account" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold"  TextColor="White" 
+                                      Grid.Column="1" Grid.Row="2" Clicked="AccountBtn_Clicked" />
+                        <buttons:SfButton x:Name="CoffinBtn" Text="Coffin" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold"  TextColor="White" 
+                                       Grid.Column="2" Grid.Row="2" Clicked="CoffinBtn_Clicked"/>
+                        <buttons:SfButton x:Name="MembersBtn" Text="Members" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold"  TextColor="White" 
+                                       Grid.Column="3" Grid.Row="2" Clicked="MembersBtn_Clicked" />
+                        <buttons:SfButton x:Name="ReportsBtn" Text="Reports" FontSize="30" BackgroundImage="Navbar.png" FontAttributes = "Bold"  TextColor="White" 
+                                       Grid.Column="4" Grid.Row="2" Clicked="ReportsBtn_Clicked" />
+
+                        <Image x:Name="PageTitleBackground" Source="Navbar.png"  Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="5"  Aspect="AspectFill" />
+                        <Label Text="ADD COFFIN" TextColor="Beige" Grid.Column="2" Grid.Row="4" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Large"/>
+
+                    </Grid>
+
+                    <Grid  x:Name="DisplayForm">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+
+                        </Grid.RowDefinitions>
+                        <Label BackgroundColor="AntiqueWhite" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="4" Grid.RowSpan="30"/>
+                        <Label Text="Customer" Grid.Column="1" Grid.Row="0" TextColor="Black"  Grid.ColumnSpan="4" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+                                <Label Text="Client ID" Grid.Column="1" Grid.Row="1" />
+                                <Label x:Name="LblCustID" Text="" Grid.Column="2" Grid.Row="1"/>
+                                <Label Text="Coffin ID" Grid.Column="3" Grid.Row="1"/>
+                                <Label x:Name="LblCoffID" Text="" Grid.Column="4" Grid.Row="1"/>
+
+                                <Label x:Name="LblFname" Text="" Grid.Column="2" Grid.Row="2"/>
+                                <Label x:Name="LblLname" Text="" Grid.Column="3" Grid.Row="2"/>
+                        <Label x:Name="LblCoffCasket" Text="" Grid.Column="4" Grid.Row="2"/>
+
+                        <!--//==========================//-->
+                                <Label Text="Measurment" Grid.Column="1" Grid.Row="3" TextColor="Black"  Grid.ColumnSpan="4" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+                                <Label Text="Height" Grid.Column="1" Grid.Row="4"/>
+                                <Label x:Name="LblHeight" Text="" Grid.Column="2" Grid.Row="4"/>
+                                <Label Text="Size" Grid.Column="3" Grid.Row="4"/>
+                                <Label x:Name="LblSize" Text="" Grid.Column="4" Grid.Row="4"/>
+
+                                <!--//==========================//-->
+                                <Label Text="Wood" Grid.Column="1" Grid.Row="5" TextColor="Black"  Grid.ColumnSpan="4" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+                                <Label x:Name="LblWood" Text=" " Grid.Column="1" Grid.Row="6"/>
+
+                                <!--//==========================//-->
+                                <Label Text="Paint" Grid.Column="1" Grid.Row="7" TextColor="Black"  Grid.ColumnSpan="4" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+                                <Label Text="UnderCoat" Grid.Column="1" Grid.Row="8"/>
+                                <Label x:Name="LblUndercoat" Text="" Grid.Column="2" Grid.Row="8" />
+                                <Label Text="Top Coat" Grid.Column="3" Grid.Row="8" />
+                                <Label x:Name="LblTopcoat" Text="" Grid.Column="4" Grid.Row="8"/>
+                                <Label Text="SprayPaint" Grid.Column="1" Grid.Row="9"/>
+                                <Label x:Name="LblSpraypaint" Text="" Grid.Column="2" Grid.Row="9"/>
+                                <Label Text="Wood Stain" Grid.Column="3" Grid.Row="9"/>
+                                <Label x:Name="LblWoodstain" Text="" Grid.Column="4" Grid.Row="9"/>
+
+                                <!--//==========================//-->
+                                <Label Text="Lid / Screws" Grid.Column="1" Grid.Row="10" TextColor="Black"  Grid.ColumnSpan="4" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+                                <Label Text="Lid" Grid.Column="1" Grid.Row="11"/>
+                                <Label x:Name="LblLid" Text="" Grid.Column="2" Grid.Row="11"/>
+                                <Label Text="Screws" Grid.Column="3" Grid.Row="11"/>
+                                <Label x:Name="LblScrews" Text="" Grid.Column="4" Grid.Row="11"/>
+
+                                <!--//==========================//-->
+                                <Label Text="Handles" Grid.Column="1" Grid.Row="12" TextColor="Black"  Grid.ColumnSpan="4" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+                                <Label Text=" Handle" Grid.Column="1" Grid.Row="13"/>
+                                <Label x:Name="LblHandle" Text="" Grid.Column="2" Grid.Row="13" />
+
+                                <!--//==========================//-->
+                                <Label Text="Lining" Grid.Column="1" Grid.Row="14" TextColor="Black"  Grid.ColumnSpan="4" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+                                <Label Text="Lining" Grid.Column="1" Grid.Row="15"/>
+                                <Label x:Name="LblLining" Text="" Grid.Column="2" Grid.Row="15"/>
+
+                                <!--//==========================//-->
+                                <Label Text="Extras" Grid.Column="1" Grid.Row="16" TextColor="Black"  Grid.ColumnSpan="4" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+                                <Label Text="Extras" Grid.Column="1" Grid.Row="17"/>
+                                <Label x:Name="LblExtra" Text=" " Grid.Column="2" Grid.Row="17" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+                                <Label Text="Comment" Grid.Column="1" Grid.Row="20"/>
+                                <Label x:Name="LblComment" Text="" Grid.Column="2" Grid.Row="20" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+
+                                <!--//==========================//-->
+                                <Label Text="Pick Up / Delivery" Grid.Column="1" Grid.Row="22" TextColor="Black"  Grid.ColumnSpan="4" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+                                <Label x:Name="LblPickupDel" Text="" Grid.Column="1" Grid.Row="23"/>
+                                <Label x:Name="LblDelAddress" Text="" Grid.Column="1" Grid.Row="24" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+
+                                <Label Text="Comments" Grid.Column="1" Grid.Row="25" TextColor="Black"  Grid.ColumnSpan="4" 
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Medium"/>
+
+                                <Label x:Name="LblDelComments" Text="" Grid.Column="1" Grid.Row="26" Grid.ColumnSpan="4" Grid.RowSpan="4"/>
+
+
+                    </Grid>
+                    </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
